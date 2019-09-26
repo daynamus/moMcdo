@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mcdo Decission Path 2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="sets/4.3.1.bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if gte IE 9]
+<style type="text/css">
+.gradient {
+filter: none;
+}
+</style>
+<![endif]-->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+    /*
+        Stop carousel
+    */
+    $('#myCarousel').carousel('pause');
+ 
+	});
+</script>
+
+</head>
+
+<body>
+	<div class="container-fluid main-container">
+			<div id="panel-1" class="panels">
+				<div class="logo-container">
+					<img class="logo-home" src="logo.png"/>
+				</div>
+				<div class="home-container">
+					<img src="logo.png" class="inlogo"/>
+				</div>
+				<div class="home-text">
+			 		<p class="solotextmain">"McDonald's "You Choose Medical Plan" Guided Learning Tool"</p>
+			 		<img src="img/Global_People_Logo2016.png" style="width: 215px;">
+				</div>
+				<div class="home-btn">
+					<div class="get-started-btn">
+						<span class="txtcontinue">Continue</span>
+						<button class="btn btn-warning" id="get-started-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel1 -->
+
+			<div id="panel-2" class="panels">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="image-container mcburger">
+								<img src="img/burger01.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;"/>
+								<img src="img/burger02.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden"/>
+								<img src="img/burger03.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden" />
+								<img src="img/burger04.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden" />
+								<img src="img/burger05.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden" />
+								<img src="img/burger06.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden" />
+							</div>
+						</div>
+
+						<div class="col-lg-7">
+						<section class="slide-wrapper" style="margin-top:12px;">
+						    <div class="container">
+							    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						            <!-- Indicators -->
+						        <!--     <ol class="carousel-indicators">
+						                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						                <li data-target="#myCarousel" data-slide-to="1"></li>
+						                <li data-target="#myCarousel" data-slide-to="2"></li>
+						                <li data-target="#myCarousel" data-slide-to="3"></li>
+						            </ol> -->
+
+						            <!-- Wrapper for slides -->
+						            <div class="carousel-inner">
+						                <div class="carousel-item active">
+						                    <div class="fill">
+												<div class="questions-container question01">
+													<h1 class="mb-2"><b>What's your role?</b></h1>
+													<!-- <i class="fa fa-check"></i> -->
+														<input type="radio" name="question01" id="0101" value="">
+														<label class="mb-4 question-item 01" for="0101">Crew, Crew Trainer or Floor Supervisor</label>
+														<input type="radio" name="question01" id="0102" value="">
+														<label class="mb-4 question-item 01" for="0102">Certiﬁed Swing, Primary Maintenance, DM or GM</label>
+														<input type="radio" name="question01" id="0103" value="">
+														<label class="mb-4 question-item 01" for="0103">Staff or Ofﬁcer</label>
+												</div>
+											</div>
+						                </div>
+						                <div class="carousel-item">
+						                    <div class="fill">
+												<div class="questions-container question02">
+													<h1 class="mb-2"><b>What's your current medical plan?</b></h1>
+														<input type="radio" name="question02" id="0201" value="">
+														<label class="mb-4 question-item 02" for="0201">Gold </label>
+														<input type="radio" name="question02" id="0202" value="">
+														<label class="mb-4 question-item 02" for="0202">Silver </label>
+														<input type="radio" name="question02" id="0203" value="">
+														<label class="mb-4 question-item 02" for="0203">Bronze </label>
+														<input type="radio" name="question02" id="0204" value="">
+														<label class="mb-4 question-item 02" for="0204">I don't have a McDonald's plan </label>
+														<input type="radio" name="question02" id="0205" value="">
+														<label class="mb-4 question-item 02" for="0205">I'm not sure </label>
+												</div>	
+						                    </div>
+						                </div>
+						                <div class="carousel-item">
+						                    <div class="fill">
+												<div class="questions-container question03">
+													<h1 class="mb-2"><b>Who will you cover?</b></h1>
+													<input type="radio" name="question03" id="0301" value="">
+													<label class="mb-4 question-item 03" for="0301">Me only</label>
+													<input type="radio" name="question03" id="0302" value="">
+													<label class="mb-4 question-item 03" for="0302">Myself plus child(ren)</label>
+													<input type="radio" name="question03" id="0303" value="">	
+													<label class="mb-4 question-item 03" for="0303">Myself plus family</label>
+												</div>
+						                    </div>
+						                </div>
+						                <div class="carousel-item">
+						                    <div class="fill">
+												<div class="questions-container question04">
+													<h1 class="mb-2"><b>Will you enroll in dental or vision?</b></h1>
+													<input type="radio" name="question04" id="0401" value="">
+													<label class="mb-4 question-item 04" for="0401">Yes</label>
+													<input type="radio" name="question04" id="0402" value="">
+													<label class="mb-4 question-item 04" for="0402">No</label>
+													<input type="radio" name="question04" id="0403" value="">
+													<label class="mb-4 question-item 04" for="0403">I'm not sure</label>
+												</div>	
+						                    </div>
+						                </div>
+						                <div class="carousel-item">
+						                    <div class="fill">
+												<div class="questions-container question05">
+													<h1 class="mb-2"><b>Will you be 55 or older in 2020?</b></h1>
+													<input type="radio" name="question05" id="0501" value="">
+													<label class="mb-4 question-item 05" for="0501">Yes</label>
+													<input type="radio" name="question05" id="0502" value="">
+													<label class="mb-4 question-item 05" for="0502">No </label>
+													<input type="radio" name="question05" id="0503" value="">
+													<label class="mb-4 question-item 05" for="0503">I'd rather not say I'm not sure</label>
+												</div>
+						                    </div>
+						                </div>
+						            </div>
+
+						            <!-- arrow -->
+									<a class="carousel-control-prev invis" href="#myCarousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a id="carousel-control-next" class="carousel-control-next invis" href="#myCarousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<!-- end arow -->
+						        </div>
+						    </div>
+						</section>
+						</div>
+							<div class="home-btn home-btn2">
+								<div class="get-started-btn">
+									<span class="txtcontinue">Continue</span>
+									<button class="btn btn-warning" id="get-started-btn2"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel2 -->
+
+
+			<div id="panel-3" class="panels hidden">
+				<span class="solotext">Great, thanks for all that info! Now we have some questions
+				about your health and how you use your healthcare. This tool
+				doesn't know who you are, so everything is totally confidential.
+				After we get through the quesitons, we'll help you understand
+				if the new HSA Plan with Health Savings Account might be a
+				good fit for you
+				</span>
+				<div class="home-btn home-btn3">
+					<div class="get-started-btn">
+						<span class="txtcontinue">Continue</span>
+						<button class="btn btn-warning" id="get-started-btn3"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel3 -->	
+
+			<div id="panel-4" class="panels hidden">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="image-container mcfries">
+								<img src="img/fries01.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;"/>
+								<img src="img/fries02.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden"/>
+							</div>
+						</div>
+						
+						<div class="col-lg-7">
+						<section class="slide-wrapper" style="margin-top:12px;">
+						    <div class="container">
+							    <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+						            <!-- Indicators -->
+						        <!--     <ol class="carousel-indicators">
+						                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						                <li data-target="#myCarousel" data-slide-to="1"></li>
+						                <li data-target="#myCarousel" data-slide-to="2"></li>
+						                <li data-target="#myCarousel" data-slide-to="3"></li>
+						            </ol> -->
+
+						            <!-- Wrapper for slides -->
+						            <div class="carousel-inner">
+
+										<div class="carousel-item active">
+										    <div class="fill">
+												<div class="questions-container question06">
+													<h1 class="mb-2"><b>About how much healthcare do you and your family use, including prescription drugs?</b></h1>
+														<input type="radio" name="question06" id="0601" value="">
+														<label class="mb-4 question-item 06" for="0601">I pay a lot out of pocket for prescription drugs each year </label>
+														<input type="radio" name="question06" id="0602" value="">
+														<label class="mb-4 question-item 06" for="0602">I have regular medical appointments to manage a chronic condition, or I’m expecting a surgery or larger medical expense next year.</label>		
+														<input type="radio" name="question06" id="0603" value="">
+														<label class="mb-4 question-item 06" for="0603">I have regular medical appointments to manage a chronic condition, or I’m expecting a surgery or larger medical expense next year.</label>		
+														<input type="radio" name="question06" id="0604" value="">
+														<label class="mb-4 question-item 06" for="0604"> I'm managing a serious medical condition that requires ongoing care and a few hospital stays throughout the year.</label>
+												</div>	
+										    </div>
+										</div>
+						                <div class="carousel-item">
+										    <div class="fill">
+												<div class="questions-container question07">
+													<h1 class="mb-2"><b>How	do you	prefer to pay for your healthcare?</b></h1>
+														<input type="radio" name="question07" id="0701" value="">
+														<label class="mb-4 question-item 07" for="0701"> I'd rather pay more for my insurance out of my paychecks, so I pay less when I get medical care.</label>
+														<input type="radio" name="question07" id="0702" value="">
+														<label class="mb-4 question-item 07" for="0702"> I prefer to pay less out of my paychecks, even if this means I may pay more if I need medical care.</label>
+												</div>	
+										    </div>
+						                </div>
+						            </div>
+
+						            <!-- arrow -->
+									<a class="carousel-control-prev invis" href="#myCarousel2" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a id="carousel-control-next2" class="carousel-control-next invis" href="#myCarousel2" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<!-- end arow -->
+						        </div>
+						    </div>
+						</section>
+						</div>
+							<div class="home-btn home-btn4">
+								<div class="get-started-btn">
+									<span class="txtcontinue">Continue</span>
+									<button class="btn btn-warning" id="get-started-btn4"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel4 -->
+
+			<div id="panel-5" class="panels hidden">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="image-container mcdrink">
+								<img src="img/drink01.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;"/>
+								<img src="img/drink02.gif" style="position: absolute;top: 0;height: 100%;width: 100%;text-align: center;margin: auto;left: 0;right: 0;object-fit: none;" class="hidden"/>
+							</div>
+						</div>
+						
+						<div class="col-lg-7">
+						<section class="slide-wrapper" style="margin-top:12px;">
+						    <div class="container">
+							    <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+						            <!-- Indicators -->
+						        <!--     <ol class="carousel-indicators">
+						                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						                <li data-target="#myCarousel" data-slide-to="1"></li>
+						                <li data-target="#myCarousel" data-slide-to="2"></li>
+						                <li data-target="#myCarousel" data-slide-to="3"></li>
+						            </ol> -->
+
+						            <!-- Wrapper for slides -->
+						            <div class="carousel-inner">
+
+										<div class="carousel-item active">
+										    <div class="fill">
+												<div class="questions-container question08">
+													<h1 class="mb-2"><b>Are you interested in saving money for future healthcare bills?</b></h1>
+														<input type="radio" name="question08" id="0801" value="">
+														<label class="mb-4 question-item 08" for="0801">Saving money for medical care later in life is important to me. I'm excited about tax-free saving opportunities.</label>	
+														<input type="radio" name="question08" id="0802" value="">
+														<label class="mb-4 question-item 08" for="0802">I'm interested in learning more about medical saving opportunities.</label>		
+														<input type="radio" name="question08" id="0803" value="">
+														<label class="mb-4 question-item 08" for="0803"> I want to save, but I have a lot of other expenses right now.</label>
+												</div>	
+										    </div>
+										</div>
+						                <div class="carousel-item">
+										    <div class="fill">
+												<div class="questions-container question09">
+													<h1 class="mb-2"><b>Looks like you have McDonald's medical insurance today. It comes with a Health Reimbursement Account (HRA) where McDonald's contributes money that is used to help pay your deductible.</b></h1>
+														<input type="radio" name="question09" id="0901" value="">
+														<label class="mb-4 question-item 09" for="0901">Yes, I know about the HRA, and I have a large balance.</label>
+														<input type="radio" name="question09" id="0902" value="">
+														<label class="mb-4 question-item 09" for="0902">Yes, I know about the HRA, and I spend the whole amount each year.</label>
+														<input type="radio" name="question09" id="0903" value="">
+														<label class="mb-4 question-item 09" for="0903">Yes, I know about the HRA, but I don't know what my balance is.</label>
+														<input type="radio" name="question09" id="0904" value="">
+														<label class="mb-4 question-item 09" for="0904">I don't really know about the HRA.</label>
+												</div>	
+										    </div>
+						                </div>
+						            </div>
+
+						            <!-- arrow -->
+									<a class="carousel-control-prev invis" href="#myCarousel3" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a id="carousel-control-next3" class="carousel-control-next invis" href="#myCarousel3" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<!-- end arow -->
+						        </div>
+						    </div>
+						</section>
+						</div>
+							<div class="home-btn home-btn5">
+								<div class="get-started-btn">
+									<span class="txtcontinue">Continue</span>
+									<button class="btn btn-warning" id="get-started-btn5"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel5 -->
+
+
+			<div id="panel-6" class="panels hidden">
+				<span class="solotext">Now we’re done with the questions. <br> 
+					<span class="solotextsmall">Medical plan might be a good ﬁt for you!</span>
+				</span>
+
+				<div class="home-btn home-btn6">
+					<div class="get-started-btn">
+						<span class="txtcontinue">Continue</span>
+						<button class="btn btn-warning" id="get-started-btn6"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel6 -->
+
+			<div id="panel-7" class="panels hidden">
+				<span class="solotext"><u>The Gold Plan</u><br> 
+					<span class="solotextsmall">Why the Gold Plan? Well, because: <br>
+					You’re in the Gold Plan today… <br> and hopefully it's working for you!
+					</span>
+				</span>
+
+				<div class="home-btn home-btn7">
+					<div class="get-started-btn">
+						<span class="txtcontinue">Continue</span>
+						<button class="btn btn-warning" id="get-started-btn7"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+<!-- ends of panel7 -->
+
+			<div id="panel-8" class="panels hidden">
+				<div class="container-fluid">
+					<br><br>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="w100 text-center">
+								<img src="img/GoldPlan.gif" class="img-fluid" style="max-width:300px;">
+							</div>	
+								<br>
+								<span class="planheader text-left">Still, it doesn’t hurt to consider the HSA Plan with the HSA Bank. </span>
+									<div class="headerlist text-left">
+										<ul>
+											<li>&nbsp;&nbsp;If you move to the HSA Plan, you’ll lose any HRA balance, but have the opportunity to save tax-free with an HSA Bank – and McDonald’s contributes, too!</li>
+											<li>&nbsp;&nbsp;Keep in mind, with the HSA Plan, your prescription drug costs count toward the deductible.
+											</li>
+										</ul>
+									</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="text-center">
+								<img src="img/mealset.png" class="img-fluid" style="max-width: 250px;">
+							</div>
+							<br>
+							<span class="planheader">Why the Gold Plan? Well, because:</span>
+							<br>
+							<p>You’re in the Gold Plan today… and hopefully it’s working for you!</p>	
+							<p>You said you’re expecting large healthcare needs next year, so you probably appreciate the lower upfront costs available with the Gold Plan</p>
+							<p>You’d prefer to pay more for your insurance out of your paychecks, but less when you need healthcare </p>
+							<br>
+						</div>
+						<div class="home-btn home-btn8">
+							<div class="get-started-btn">
+								<span class="txtcontinue">Learn about the HSA Bank</span>
+								<button class="btn btn-warning" id="get-started-btn8"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+							</div>
+						</div>				
+				</div>
+			</div>
+
+	</div>
+
+
+<!-- script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="sets/3.4.1.jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="sets/4.3.1.bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		// $('*').bind('touchmove', false);	
+		// $('*').bind('mousewheel',function(){ return false; });
+		$(document).ready(function(){
+			$("input[type='radio']").prop('checked', false);
+			 $('.logo-home').addClass('initial-logo');
+			 $('.home-container').addClass('drop-from-top');
+			 $('html, body').animate({
+				scrollTop: $("#panel-1").offset().top
+			});
+
+
+			$("#get-started-btn").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#panel-2").offset().top
+				}, 1000);
+				$('.home-container').addClass('droptobot');
+				$('.home-text').addClass('fade-out');
+				$('.home-btn').addClass('fade-out');
+				$('.inlogo').addClass('opa0');	
+			});
+
+			 $(".question-item.01").click(function() {
+				$('.mcburger img:nth-child(1)').addClass("hidden");
+				$('.mcburger img:nth-child(2)').removeClass("hidden");
+			});
+			 $(".question-item.02").click(function() {
+				$('.mcburger img:nth-child(2)').addClass("hidden");
+				$('.mcburger img:nth-child(3)').removeClass("hidden");
+			});
+			 $(".question-item.03").click(function() {
+				$('.mcburger img:nth-child(3)').addClass("hidden");
+				$('.mcburger img:nth-child(4)').removeClass("hidden");
+			});
+			 $(".question-item.04").click(function() {
+				$('.mcburger img:nth-child(4)').addClass("hidden");
+				$('.mcburger img:nth-child(5)').removeClass("hidden");
+			});
+			 $(".question-item.05").click(function() {
+				$('.mcburger img:nth-child(5)').addClass("hidden");
+				$('.mcburger img:nth-child(6)').removeClass("hidden");
+			});
+			$(".question-item.01,.question-item.02,.question-item.03,.question-item.04,.question-item.06").click(function(){
+				document.getElementById("carousel-control-next").click();
+			});	 
+			$(".question01 input[name='question01']").click(function(){
+				$(".question01 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question01 input[type='radio']:checked + label").removeClass("notactiveradio");
+			});
+			$(".question02 input[name='question02']").click(function(){
+				$(".question02 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question02 input[type='radio']:checked + label").removeClass("notactiveradio");
+			});
+			$(".question03 input[name='question03']").click(function(){
+				$(".question03 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question03 input[type='radio']:checked + label").removeClass("notactiveradio");
+			});
+			$(".question04 input[name='question04']").click(function(){
+				$(".question04 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question04 input[type='radio']:checked + label").removeClass("dnotactiveradioel");
+			});
+
+			$(".question05 input[name='question05']").click(function(){
+				$(".question05 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question05 input[type='radio']:checked + label").removeClass("notactiveradio");
+				// $('.home-btn2').removeClass('dblock');
+				$('.home-btn').removeClass('fade-out');
+
+			});	
+
+			$(".home-btn #get-started-btn2").click(function(){
+				$("#panel-2").addClass("hidden");
+				$("#panel-3").removeClass("hidden");
+			});
+
+			$("#get-started-btn3").click(function(){
+				$("#panel-3").addClass("hidden");
+				$("#panel-4").removeClass("hidden");
+			});
+
+			$(".question-item.06").click(function(){
+				document.getElementById("carousel-control-next2").click();
+			});	
+
+			$(".question-item.06").click(function() {
+				$('.mcfries img:nth-child(1)').addClass("hidden");
+				$('.mcfries img:nth-child(2)').removeClass("hidden");
+			});
+
+			$(".question06 input[name='question06']").click(function(){
+				$(".question06 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question06 input[type='radio']:checked + label").removeClass("dnotactiveradioel");
+			});
+
+			$(".question07 input[name='question07']").click(function(){
+				$(".question07 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question07 input[type='radio']:checked + label").removeClass("dnotactiveradioel");
+			});
+
+			$("#get-started-btn4").click(function(){
+				$("#panel-4").addClass("hidden");
+				$("#panel-5").removeClass("hidden");
+			});
+
+			$(".question-item.08").click(function(){
+				document.getElementById("carousel-control-next3").click();
+			});	
+			$(".question08 input[name='question08']").click(function(){
+				$(".question08 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question08 input[type='radio']:checked + label").removeClass("dnotactiveradioel");
+			});
+
+			$(".question-item.08").click(function() {
+				$('.mcdrink img:nth-child(1)').addClass("hidden");
+				$('.mcdrink img:nth-child(2)').removeClass("hidden");
+			});
+	
+			$(".question09 input[name='question09']").click(function(){
+				$(".question09 input[type='radio']:not(:checked) + label").addClass("notactiveradio");
+				$(".question09 input[type='radio']:checked + label").removeClass("dnotactiveradioel");
+			});
+
+			$("#get-started-btn5").click(function(){
+				$("#panel-5").addClass("hidden");
+				$("#panel-6").removeClass("hidden");
+			});
+
+			$("#get-started-btn6").click(function(){
+				$("#panel-6").addClass("hidden");
+				$("#panel-7").removeClass("hidden");
+			});
+
+			$("#get-started-btn7").click(function(){
+				$("#panel-7").addClass("hidden");
+				$("#panel-8").removeClass("hidden");
+			});
+		});
+
+	</script>
+<!-- end script -->
+
+</body>
+</html>
