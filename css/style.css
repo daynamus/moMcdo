@@ -393,6 +393,7 @@ h1.mb-2{
 
 .carousel-control-next, .carousel-control-prev{
 	height: 120px;
+	display: none;
 }
 
 
@@ -458,8 +459,6 @@ h1.mb-2{
 	margin-left:120px;
 }*/
 
-
-
 .planheader{
 	color:#8C3D66;
 	font-weight: bold;
@@ -470,9 +469,6 @@ h1.mb-2{
 	list-style: none;
 	font-size:.9rem;
 }
-
-
-
 
 .headerlist li::before {
     content: "•";
@@ -486,8 +482,6 @@ h1.mb-2{
 .headerlist li{
     margin-bottom: 5px;
 }
-
-
 
 
 @media (max-width: 430px){
@@ -527,7 +521,7 @@ h1.mb-2{
     margin-top: -8px;
     /* border: 1px solid green; */
     height: 439px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 	}
 
@@ -587,3 +581,4 @@ h1.mb-2{
 }
 
 /*SCROLL BAR*/
+
